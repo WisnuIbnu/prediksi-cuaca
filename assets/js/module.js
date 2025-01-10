@@ -85,7 +85,7 @@ export const aqiText = {
         message: "Kualitas udara dapat diterima; namun, untuk beberapa polutan, mungkin ada masalah kesehatan moderat bagi sebagian kecil orang yang sangat sensitif terhadap polusi udara."
     },
     3: {
-        level: "Moderat/Panas",
+        level: "Moderate",
         message: "Anggota kelompok sensitif mungkin mengalami efek kesehatan. Masyarakat umum tidak cenderung terpengaruh."
     },
     4: {
