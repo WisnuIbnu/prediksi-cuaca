@@ -333,7 +333,7 @@ export const updateWeather = function (lat, lon) {
             } = forecast;
 
             hourlySection.innerHTML = `
-            <h2 class="title-2">Hari Ini</h2>
+            <h2 class="title-2">Suhu & Kecepatan Angin Hari Ini.</h2>
             <div class="slider-container">
                 <ul class="slider-list" data-temp></ul>
                 <ul class="slider-list" data-wind></ul>
