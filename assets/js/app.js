@@ -422,8 +422,7 @@ export const updateWeather = function (lat, lon) {
                 </div>
 
                 <p class="label-1">${date.getDate()} ${module.monthNames[date.getUTCMonth()]}</p>
-
-                <p class="label-1">${module.weekDayNames[date.getUTCDay()]}</p>
+                <p class="label-1">${module.weekDayNames[(date.getUTCDay() + 1) % 7]}</p>
             `;
 
             forecastSection.querySelector("[data-forecast-list]").appendChild(li);
