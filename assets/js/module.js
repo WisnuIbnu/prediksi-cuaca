@@ -1,28 +1,28 @@
 
 'use strict';
 export const weekDayNames = [
-    'Minggu',
     'Senin',
     'Selasa',
     'Rabu',
     'Kamis',
     'Jumat',
-    'Sabtu'
+    'Sabtu',
+    'Minggu'
 ];
 
 export const monthNames = [ 
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
+    'Januari',
+    'Februari',
+    'Maret',
+    'April',
     'Mei',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Okt',
-    'Nov',
-    'Des'
+    'Juni',
+    'Juli',
+    'Agustus',
+    'September',
+    'Oktober',
+    'November',
+    'Desember'
 ];
 
 
@@ -34,9 +34,9 @@ export const getDate = function(dateUnix, timezone) {
     const date = new Date((dateUnix + timezone) * 1000);
     const weekDayName = weekDayNames[date.getUTCDay()];
     const monthName = monthNames[date.getUTCMonth()]; 
+    const year = date.getUTCFullYear(); 
 
-
-    return `${weekDayName} ${date.getUTCDate()}, ${monthName}`;
+    return `${weekDayName}, ${date.getUTCDate()} ${monthName} ${year}`;
 };
 
 // DataUnix = unix date in second
