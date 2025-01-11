@@ -59,7 +59,7 @@ export const getTime = function(timeUnix, timezone) {
 // Format Return = "HH AM/PM"
 
 export const getHours = function(timeUnix, timezone) {
-    const date = new Date((timeUnix + timezone) * 1000);
+    const date = new Date((timeUnix + timezone * 3600) * 1000);
     const hours = date.getHours(); 
     const minutes = date.getMinutes().toString().padStart(2, '0');
 
