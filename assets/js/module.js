@@ -1,13 +1,13 @@
 
 'use strict';
 export const weekDayNames = [
+    'Minggu',
     'Senin',
     'Selasa',
     'Rabu',
     'Kamis',
     'Jumat',
-    'Sabtu',
-    'Minggu'
+    'Sabtu'
 ];
 
 export const monthNames = [ 
